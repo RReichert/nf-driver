@@ -1,0 +1,17 @@
+*.o
+*.ko
+*.mod.c
+*.mod.o
+*.swp
+.tmp*
+.falcon*
+src/.*
+modules.order
+Module.symvers
+
+tags
+cscope/
+cscope.out
+cscope.in.out
+cscope.po.out
+cscope.files
