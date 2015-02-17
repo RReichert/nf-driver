@@ -2,6 +2,8 @@
 #include <linux/module.h>
 #include <linux/usb.h>
 
+static int __init falcon_init(void);
+static void __exit falcon_exit(void);
 static int falcon_probe(struct usb_interface*, const struct usb_device_id*);
 static void falcon_disconnect(struct usb_interface *interfac);
 
