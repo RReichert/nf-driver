@@ -1,3 +1,9 @@
+# qt files
+nf-driver.pro
+nf-driver.pro.user
+deployment.pri
+
+# module object files
 *.o
 *.ko
 *.mod.c
@@ -8,10 +14,3 @@
 src/.*
 modules.order
 Module.symvers
-
-tags
-cscope/
-cscope.out
-cscope.in.out
-cscope.po.out
-cscope.files

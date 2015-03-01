@@ -6,7 +6,10 @@ MODULEDIR ?= /lib/modules/$(shell uname -r)/build
 
 .PHONY: tags clean
 
-all:
+default:
+	@echo 'please select a task'
+
+build:
 	$(MAKE) -C $(MODULEDIR) M=$(PWD) modules
 
 clean:
