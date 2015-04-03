@@ -1,15 +1,18 @@
-obj-m := falcon.o
-falcon-y := driver.o
+obj-m    := falcon.o
+falcon-y := src/driver.o
 
-PWD := $(shell pwd)
-MODULEDIR ?= /lib/modules/$(shell uname -r)/build
+ccflags-y := -DDEBUG
+#ccflags-y := -I$(src)/include
 
-.PHONY: tags clean
+PWD       := $(shell pwd)
+MODULEDIR := /lib/modules/$(shell uname -r)/build
+
+.PHONE: build clean
 
 default:
 	@echo 'please select a task'
 
-build:
+all:
 	$(MAKE) -C $(MODULEDIR) M=$(PWD) modules
 
 clean:
