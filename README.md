@@ -1,4 +1,4 @@
-nf-drvier
+nf-driver
 =========
 
 the intent of this project is to develop a linux driver for the Novint Falcon product so as to allow individuals to freely develop applications for the mechanical robot. although there are drivers out there that would allow me to do so, i've found various limitations that deterred me from using them. the products that i've come across are:
